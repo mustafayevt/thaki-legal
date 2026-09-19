@@ -24,34 +24,39 @@ blockquote{margin:1.2em 0;padding:.6em 1em;background:var(--cream);
  h2{border-top-color:rgba(237,231,218,.14)} hr{border-top-color:rgba(237,231,218,.14)}}
 </style></head>
 <body><div class="wrap"><p class="nav"><a href="./index.html">Thaki</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./support.html">Support</a></p>
-<h1>Thaki: Goal Trails — Privacy Policy</h1>
-<p><strong>To be published at:</strong> a stable HTTPS URL the founder owns. Once live, pass it as <code>--dart-define=THAKI_PRIVACY_URL=…</code>; that is what the in-app &quot;Privacy policy&quot; rows (Settings and the Trail Pro screen) open.</p>
-<p><strong>Last updated:</strong> 2026-07-19</p>
+<h1>Thaki — Privacy Policy</h1>
+<p><strong>Last updated:</strong> 2026-09-19</p>
 <h2>The short version</h2>
-<p>Thaki is local-first: your trails, camps, and daily steps live on your device whether or not you ever create an account. We don&#x27;t run ads, and we don&#x27;t sell your data — to anyone, ever. If you sign in, a minimal set of data syncs to our backend (Supabase) so your trails follow you across devices; AI trail-building sends your goal&#x27;s title (not your journal entries or personal notes) to a third-party AI provider through our own server. The details are below.</p>
+<p>Thaki is local-first: your paths, camps, and tiny steps live on your device whether or not you ever create an account. We don&#x27;t run ads, and we don&#x27;t sell your data — to anyone, ever. If you sign in, a minimal set of data syncs to our backend (Supabase) so your paths follow you across devices; AI charting sends your path&#x27;s title (not your journal entries or personal notes) to a third-party AI provider through our own server. None of the data described below is used to track you. The details are below.</p>
 <h2>1. What Thaki stores locally, on your device</h2>
-<p>Everything you do in Thaki — every goal, milestone (&quot;camp&quot;), daily todo, check-in, streak, and preference — is saved to a single local data file on your device. This works fully offline, before you ever create an account, and continues to work if you never do. Deleting the app deletes this data; we don&#x27;t hold a hidden copy of it unless you&#x27;ve turned on cloud sync (§2).</p>
+<p>Everything you do in Thaki — every path, camp, tiny step, check-in, streak, and preference — is saved to a single local data file on your device. This works fully offline, before you ever create an account, and continues to work if you never do. Deleting the app deletes this data; we don&#x27;t hold a hidden copy of it unless you&#x27;ve signed in and turned on cloud sync (§2).</p>
 <h2>2. What syncs to our servers, if you sign in</h2>
 <p>Thaki uses <a href="https://supabase.com">Supabase</a> as its backend. Signing in is always optional — the app is fully usable without it.</p>
 <ul>
-<li><strong>Account &amp; authentication.</strong> Signing in currently uses an email address</li>
+<li><strong>Account &amp; authentication.</strong> You can sign in with Sign in with Apple,</li>
 </ul>
-<p>and a one-time code we send to it (no password to remember). We store your email address and Supabase&#x27;s authentication records for your account.</p>
+<p>or with an email address and a one-time code we send to it (no password to remember). We store your email address (if you use the email code) and Supabase&#x27;s authentication records for your account, including an internal User ID we use to link your data to you.</p>
 <ul>
-<li><strong>Synced goal data.</strong> If you&#x27;re signed in, your goals, milestones, todos,</li>
+<li><strong>Synced path data.</strong> If you&#x27;re signed in, your paths, camps, tiny</li>
 </ul>
-<p>check-ins, and streak sync to our Supabase database so they&#x27;re available if you reinstall the app or use it on another device. This is the same data described in §1 — sync doesn&#x27;t add new categories of data, it just gives your existing data a second home.</p>
+<p>steps, and profile sync to our Supabase database so they&#x27;re available if you reinstall the app or use it on another device. This is the same data described in §1 — sync doesn&#x27;t add new categories of data, it just gives your existing data a second home.</p>
+<ul>
+<li><strong>Purchase history.</strong> If you buy Thaki Pro, we use <a href="https://www.revenuecat.com">RevenueCat</a> to</li>
+</ul>
+<p>record your purchase history and current subscription status, linked to your account, so the app knows to unlock Thaki Pro. We never see your card details — Apple handles billing.</p>
 <ul>
 <li><strong>Usage events.</strong> We record a small set of product-usage events (things</li>
 </ul>
-<p>like &quot;app opened,&quot; &quot;goal created,&quot; &quot;camp conquered&quot;) to understand how people actually use Thaki and to fix what&#x27;s confusing. These events are keyed to your account if you&#x27;re signed in, or to a random, anonymous per-install identifier if you&#x27;re not — an identifier that isn&#x27;t tied to your name, email, or device in any way we can reverse. If you later sign in, your anonymous history and your account become linked going forward; we don&#x27;t retroactively deanonymize anything beyond that. Event data is retained for a limited window (on the order of months) and then deleted.</p>
-<h2>3. AI trail-building — what leaves your device and why</h2>
-<p>When you ask Thaki to chart a trail for you (instead of building it yourself), we send <strong>your goal&#x27;s title</strong> — for example, &quot;Run a 10K&quot; or &quot;Learn to bake sourdough&quot; — to an AI model through <a href="https://openrouter.ai">OpenRouter</a>, a service that routes requests to various AI providers. We don&#x27;t send your check-ins, journal-style notes, milestone completion history, or any other personal data as part of this request — only the title you typed and a small amount of app-generated context needed to shape a sensible trail (like how many camps you asked for).</p>
+<p>like &quot;app opened,&quot; &quot;path started,&quot; &quot;camp cleared&quot;) to understand how people actually use Thaki and to fix what&#x27;s confusing. These events are keyed to your account if you&#x27;re signed in, or to a random, app-generated Device ID for that install if you&#x27;re not — an identifier that isn&#x27;t tied to your name, email, or the identity of your device in any way we can reverse, and isn&#x27;t linked to you. If you later sign in, your anonymous history and your account become linked going forward; we don&#x27;t retroactively deanonymize anything beyond that. Event data is retained for a limited window (on the order of months) and then deleted.</p>
+<h2>3. AI charting — what leaves your device and why</h2>
+<p>When you ask Thaki to chart a trail for you (&quot;Chart my trail,&quot; instead of building it yourself), we send <strong>your path&#x27;s title</strong> — for example, &quot;Run a 10K&quot; or &quot;Learn to bake sourdough&quot; — to an AI model through <a href="https://openrouter.ai">OpenRouter</a>, a service that routes requests to various AI providers. We don&#x27;t send your check-ins, journal entries, camp completion history, or any other personal data as part of this request — only the title you typed and a small amount of app-generated context needed to shape a sensible trail (like how many camps you asked for). Charting is optional — you can always build your own path by hand instead — and every camp it suggests is yours to rearrange, rename, or delete afterwards. Chartings are limited to a number per day, higher with Thaki Pro.</p>
 <p><strong>Beta caveat, disclosed plainly:</strong> during Thaki&#x27;s beta/TestFlight period, this feature may use a free-tier AI model. Free-tier models from some providers may log prompts for abuse monitoring or use them to improve their own models — this is a limitation of the underlying free service, not something Thaki does with your data on our own servers. We plan to move to a paid, no-logging model before a general App Store release; this policy will be updated when that happens, and this paragraph will be removed once it&#x27;s no longer true.</p>
-<p>Manual trail-building — pitching your own camps without asking the AI — never sends anything to this AI provider. It&#x27;s always available and always free.</p>
-<h2>4. Crash reporting</h2>
-<p>If Thaki crashes or hits an unexpected error, we may send a crash report to <a href="https://sentry.io">Sentry</a>, a crash-reporting service, so we can fix the bug. Crash reports can include technical details like a stack trace, app version, and device/OS type; they are not designed to and should not contain your goal titles, check-in notes, or other personal content, though no crash-reporting tool can make an absolute guarantee that no fragment of in-memory state ever appears in a report. Crash reporting is limited to what&#x27;s necessary to diagnose the crash and is retained on Sentry&#x27;s side only for a limited retention window, per our error-reporting provider&#x27;s plan.</p>
-<h2>5. What we don&#x27;t do</h2>
+<p>Manual path-building — pitching your own camps without asking the AI — never sends anything to this AI provider. It&#x27;s always available and always free.</p>
+<h2>4. What we don&#x27;t do</h2>
+<ul>
+<li><strong>No tracking.</strong> None of the data described above is used to track you</li>
+</ul>
+<p>across other companies&#x27; apps or websites.</p>
 <ul>
 <li><strong>No ads.</strong> Thaki has no advertising SDKs, no ad networks, and no</li>
 </ul>
@@ -63,29 +68,29 @@ blockquote{margin:1.2em 0;padding:.6em 1em;background:var(--cream);
 <ul>
 <li><strong>No data broker relationships.</strong> The only third-party processors</li>
 </ul>
-<p>involved are the ones named in this policy (Supabase, OpenRouter, Sentry), each used strictly to provide the feature described above.</p>
-<h2>6. Your choices and controls</h2>
+<p>involved are the ones named in this policy — Apple (App Store, Sign in with Apple, App Attest), RevenueCat (subscriptions), Supabase (backend), and OpenRouter (AI charting) — each used strictly to provide the feature described above.</p>
+<h2>5. Your choices and controls</h2>
 <ul>
-<li><strong>Notifications</strong> (&quot;Gentle nudges&quot;) can be turned off entirely from</li>
+<li><strong>Daily reminder</strong> (&quot;a morning nudge to take one tiny step&quot;) can be</li>
 </ul>
-<p>Settings, in addition to iOS&#x27;s own notification controls. Turning this off cancels any scheduled reminders immediately.</p>
+<p>turned off entirely from Settings, in addition to iOS&#x27;s own notification controls. Turning this off cancels any scheduled reminders immediately.</p>
 <ul>
 <li><strong>Account deletion</strong> is available in-app, from Settings → Delete account.</li>
 </ul>
-<p>This deletes your account and its server-side copy of your data; usage events (§2) are disconnected from your identity at that point and expire within our retention window (on the order of 180 days). You&#x27;ll be asked whether to also wipe the local copy on that device, or keep it — your choice, either way, is respected exactly.</p>
+<p>This deletes your account and its server-side copy of your data; usage events (§2) are disconnected from your identity at that point and expire within our retention window (on the order of 180 days).</p>
 <ul>
-<li><strong>Export / import</strong> lets you take a full copy of your local data out of</li>
+<li><strong>Start fresh</strong> is a separate option, also in Settings, that wipes the</li>
 </ul>
-<p>the app at any time, independent of any account.</p>
+<p>local copy of your paths on that device — useful if you want to begin again without deleting your account.</p>
 <ul>
 <li><strong>Sign-out</strong> never deletes your local data — it only stops that device</li>
 </ul>
 <p>from syncing until you sign back in.</p>
-<h2>7. Children</h2>
+<h2>6. Children</h2>
 <p>Thaki does not knowingly collect personal information from children under the age applicable in your jurisdiction, and does not include a birthday or age-gate flow. If you believe a child has provided us personal information, contact us using the address below and we&#x27;ll remove it.</p>
-<h2>8. Changes to this policy</h2>
+<h2>7. Changes to this policy</h2>
 <p>If we materially change what we collect or how we use it, we&#x27;ll update this page and adjust the &quot;Last updated&quot; date above. Continuing to use Thaki after a change means you accept the updated policy; if you don&#x27;t, you can stop using the app&#x27;s networked features (or the app entirely) and delete your account at any time.</p>
-<h2>9. Contact</h2>
+<h2>8. Contact</h2>
 <p>Questions about this policy or your data? Reach us at <strong>badambura.corp@gmail.com</strong>.</p>
 <p>This policy is governed by the laws of <strong>Azerbaijan</strong>, without regard to its conflict-of-law provisions.</p>
 </div></body></html>
