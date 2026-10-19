@@ -1,46 +1,53 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thaki — Support</title><style>
-:root{--paper:#F2EEDC;--ink:#322E36;--muted:#8B7A60;--ember:#D96C38;--cream:#FBF7EA}
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How to reach a person, and answers to common questions.">
+<title>Support — Thaki</title>
+<style>
+:root{--bg:#F4F8FB;--text:#223A4C;--link:#2E6E9E;--muted:#6B7F8E;--panel:#E3EEF7;--accent:#4FBFA0;--line:rgba(34,58,76,.16)}
+@media (prefers-color-scheme:dark){:root{--bg:#15202A;--text:#E6EEF4;--link:#7DB8E3;--muted:#98AAB8;--panel:#1F2E3B;--accent:#4FBFA0;--line:rgba(230,238,244,.18)}}
 *{box-sizing:border-box}
-body{margin:0;padding:0;background:var(--paper);color:var(--ink);
- font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
-h1{font-size:1.9rem;line-height:1.2;margin:0 0 .35em}
-h2{font-size:1.25rem;margin:2.2em 0 .5em;padding-top:.6em;border-top:1px solid rgba(50,46,54,.12)}
-h3{font-size:1.05rem;margin:1.6em 0 .4em}
-a{color:var(--ember)}
-code{background:var(--cream);padding:.1em .35em;border-radius:4px;font-size:.9em}
-ul,ol{padding-left:1.3rem}
-hr{border:0;border-top:1px solid rgba(50,46,54,.12);margin:2em 0}
-.nav{margin:0 0 2rem;font-size:.92rem}
-.nav a{margin-right:1rem;text-decoration:none}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+.nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;margin:0 0 2rem;padding-bottom:.9rem;border-bottom:3px solid var(--accent);font-size:.95rem}
+.nav a{text-decoration:none;font-weight:600}
+.nav a.on{color:var(--text)}
 .nav a:hover{text-decoration:underline}
-blockquote{margin:1.2em 0;padding:.6em 1em;background:var(--cream);
- border-left:3px solid var(--ember);border-radius:0 8px 8px 0}
-@media (prefers-color-scheme:dark){
- :root{--paper:#242028;--ink:#EDE7DA;--cream:#2E2934;--muted:#A2977F}
- h2{border-top-color:rgba(237,231,218,.14)} hr{border-top-color:rgba(237,231,218,.14)}}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .3em}
+h2{font-size:1.25rem;line-height:1.3;margin:2.2em 0 .5em;padding-top:.7em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+a{color:var(--link)}
+.muted{color:var(--muted);font-size:.92rem;margin:0 0 1.5rem}
+ul{padding-left:1.3rem}
+li{margin:.3em 0}
+.tw{overflow-x:auto;margin:1em 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.9rem;line-height:1.5}
+th,td{border:1px solid var(--line);padding:.5em .65em;text-align:left;vertical-align:top}
+th{background:var(--panel)}
+.card{background:var(--panel);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:.8rem 1rem;margin:1.2rem 0}
+.card p{margin:.2em 0}
+footer{margin-top:3rem;color:var(--muted);font-size:.88rem}
 </style></head>
-<body><div class="wrap"><p class="nav"><a href="./index.html">Thaki</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./support.html">Support</a></p>
-<h1>Thaki — Support</h1>
-<p><strong>Last updated:</strong> 2026-09-19</p>
-<h2>Contact us</h2>
-<p>Email <strong>badambura.corp@gmail.com</strong>. We&#x27;re a very small team, so please allow a few business days for a reply. It helps enormously if you include:</p>
-<ul>
-<li>your device and iOS version,</li>
-<li>what you expected to happen and what happened instead,</li>
-<li>roughly when it happened (so we can line it up with our error reports).</li>
-</ul>
-<p>Please don&#x27;t send passwords or sign-in codes — we will never ask for them.</p>
-<h2>Common questions</h2>
-<p><strong>Do I need an account?</strong> No. Thaki works fully offline and signed out — your paths, camps, and tiny steps live on your device. Signing in (Sign in with Apple, or an emailed code, no password) only adds sync so your paths follow you to another device.</p>
-<p><strong>I lost my paths / I got a new phone.</strong> If you were signed in, sign in again the same way (Sign in with Apple, or the same email) and your paths sync back down. If you were never signed in, your paths only ever existed on the old device — restore it from an iCloud/iTunes device backup.</p>
-<p><strong>How do I manage or cancel Thaki Pro?</strong> Subscriptions are billed by Apple, not by us, so they&#x27;re managed in your Apple ID: iPhone Settings → Apple Account → Subscriptions → Thaki. Cancel at least 24 hours before the renewal date to avoid the next charge. Already paid for a subscription on another device? Thaki Pro screen → &quot;Restore purchases&quot;.</p>
-<p><strong>I was charged and Thaki Pro didn&#x27;t unlock.</strong> Tap &quot;Restore purchases&quot; on the Thaki Pro screen first — that re-checks your Apple ID. If it still doesn&#x27;t unlock, email us. Refunds are handled by Apple (<a href="https://reportaproblem.apple.com">https://reportaproblem.apple.com</a>); we can&#x27;t issue them ourselves.</p>
-<p><strong>How do I turn off the daily reminder?</strong> Settings → &quot;Daily reminder&quot;. It&#x27;s a morning nudge to take one tiny step, nothing more — Thaki never shames a missed day, and a lapsed streak just quietly starts counting again.</p>
-<p><strong>How do I delete my account and my data?</strong> Settings → &quot;Delete account&quot;. This removes your account and its server-side rows. If you just want to wipe the copy on this device without deleting your account, use Settings → &quot;Start fresh&quot; instead. See the <a href="./privacy.html">Privacy Policy</a> for the full picture of what we store.</p>
-<h2>Accessibility</h2>
-<p>Thaki respects the system Reduce Motion setting throughout, and every control carries a VoiceOver label. If something is unusable with an accessibility setting turned on, please tell us — we treat that as a bug, not a request.</p>
+<body><div class="wrap">
+<nav class="nav" aria-label="Thaki pages"><a href="index.html">Thaki</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html" class="on" aria-current="page">Support</a></nav>
+<h1>Support</h1>
+<p class="muted">Last updated: 19 October 2026</p>
+<h2 id="contact-us">Contact us</h2>
+<p>Email <a href="mailto:mustafayev.t@outlook.com">mustafayev.t@outlook.com</a>. A real person reads every message. It helps to include your iPhone model and iOS version, what you expected and what happened, and roughly when.</p>
+<h2 id="common-questions">Common questions</h2>
+<h3 id="do-i-need-an-account">Do I need an account?</h3>
+<p>No. You can build a goal and walk it on your iPhone without signing in. Signing in with Apple keeps your goals synced, and planning with Thaki needs an account and Thaki Pro.</p>
+<h3 id="i-got-a-new-phone">I got a new phone.</h3>
+<p>Sign in with Apple to keep your goals on a new phone. Goals on a phone that never signed in stay on that phone; an iPhone backup restores them.</p>
+<h3 id="how-do-i-cancel-thaki-pro">How do I cancel Thaki Pro?</h3>
+<p>Thaki Pro is billed by Apple, so you cancel it in the Settings app: tap your name, then Subscriptions, then Thaki. Cancel at least 24 hours before it renews. Deleting the app or your account does not cancel it.</p>
+<h3 id="i-paid-and-thaki-pro-didn-t-unlock">I paid and Thaki Pro didn't unlock.</h3>
+<p>Tap Restore purchases on the Thaki Pro screen (or You → the profile card → Account → Restore purchases). If it still doesn't unlock, email us. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<h3 id="how-do-i-turn-off-the-reminder">How do I turn off the reminder?</h3>
+<p>Switch it off in You → Reminders. Thaki sends one nudge a day at most, and only if you turned it on.</p>
+<h3 id="how-do-i-delete-my-account">How do I delete my account?</h3>
+<p>You → the profile card → Account → Delete account. The goals on your phone stay.</p>
+<h3 id="questions-about-your-data">Questions about your data?</h3>
+<p>Write to <a href="mailto:mustafayev.t@outlook.com">mustafayev.t@outlook.com</a>. The <a href="privacy.html">privacy policy</a> says what we keep and why.</p>
 </div></body></html>

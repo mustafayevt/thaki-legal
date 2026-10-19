@@ -1,96 +1,129 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thaki — Privacy Policy</title><style>
-:root{--paper:#F2EEDC;--ink:#322E36;--muted:#8B7A60;--ember:#D96C38;--cream:#FBF7EA}
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How Thaki handles your data.">
+<title>Privacy Policy — Thaki</title>
+<style>
+:root{--bg:#F4F8FB;--text:#223A4C;--link:#2E6E9E;--muted:#6B7F8E;--panel:#E3EEF7;--accent:#4FBFA0;--line:rgba(34,58,76,.16)}
+@media (prefers-color-scheme:dark){:root{--bg:#15202A;--text:#E6EEF4;--link:#7DB8E3;--muted:#98AAB8;--panel:#1F2E3B;--accent:#4FBFA0;--line:rgba(230,238,244,.18)}}
 *{box-sizing:border-box}
-body{margin:0;padding:0;background:var(--paper);color:var(--ink);
- font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
-h1{font-size:1.9rem;line-height:1.2;margin:0 0 .35em}
-h2{font-size:1.25rem;margin:2.2em 0 .5em;padding-top:.6em;border-top:1px solid rgba(50,46,54,.12)}
-h3{font-size:1.05rem;margin:1.6em 0 .4em}
-a{color:var(--ember)}
-code{background:var(--cream);padding:.1em .35em;border-radius:4px;font-size:.9em}
-ul,ol{padding-left:1.3rem}
-hr{border:0;border-top:1px solid rgba(50,46,54,.12);margin:2em 0}
-.nav{margin:0 0 2rem;font-size:.92rem}
-.nav a{margin-right:1rem;text-decoration:none}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+.nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;margin:0 0 2rem;padding-bottom:.9rem;border-bottom:3px solid var(--accent);font-size:.95rem}
+.nav a{text-decoration:none;font-weight:600}
+.nav a.on{color:var(--text)}
 .nav a:hover{text-decoration:underline}
-blockquote{margin:1.2em 0;padding:.6em 1em;background:var(--cream);
- border-left:3px solid var(--ember);border-radius:0 8px 8px 0}
-@media (prefers-color-scheme:dark){
- :root{--paper:#242028;--ink:#EDE7DA;--cream:#2E2934;--muted:#A2977F}
- h2{border-top-color:rgba(237,231,218,.14)} hr{border-top-color:rgba(237,231,218,.14)}}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .3em}
+h2{font-size:1.25rem;line-height:1.3;margin:2.2em 0 .5em;padding-top:.7em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+a{color:var(--link)}
+.muted{color:var(--muted);font-size:.92rem;margin:0 0 1.5rem}
+ul{padding-left:1.3rem}
+li{margin:.3em 0}
+.tw{overflow-x:auto;margin:1em 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.9rem;line-height:1.5}
+th,td{border:1px solid var(--line);padding:.5em .65em;text-align:left;vertical-align:top}
+th{background:var(--panel)}
+.card{background:var(--panel);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:.8rem 1rem;margin:1.2rem 0}
+.card p{margin:.2em 0}
+footer{margin-top:3rem;color:var(--muted);font-size:.88rem}
 </style></head>
-<body><div class="wrap"><p class="nav"><a href="./index.html">Thaki</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./support.html">Support</a></p>
-<h1>Thaki — Privacy Policy</h1>
-<p><strong>Last updated:</strong> 2026-09-19</p>
-<h2>The short version</h2>
-<p>Thaki is local-first: your paths, camps, and tiny steps live on your device whether or not you ever create an account. We don&#x27;t run ads, and we don&#x27;t sell your data — to anyone, ever. If you sign in, a minimal set of data syncs to our backend (Supabase) so your paths follow you across devices; AI charting sends your path&#x27;s title (not your journal entries or personal notes) to a third-party AI provider through our own server. None of the data described below is used to track you. The details are below.</p>
-<h2>1. What Thaki stores locally, on your device</h2>
-<p>Everything you do in Thaki — every path, camp, tiny step, check-in, streak, and preference — is saved to a single local data file on your device. This works fully offline, before you ever create an account, and continues to work if you never do. Deleting the app deletes this data; we don&#x27;t hold a hidden copy of it unless you&#x27;ve signed in and turned on cloud sync (§2).</p>
-<h2>2. What syncs to our servers, if you sign in</h2>
-<p>Thaki uses <a href="https://supabase.com">Supabase</a> as its backend. Signing in is always optional — the app is fully usable without it.</p>
+<body><div class="wrap">
+<nav class="nav" aria-label="Thaki pages"><a href="index.html">Thaki</a><a href="privacy.html" class="on" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: 19 October 2026 · Version 2</p>
+<h2 id="who-we-are">Who we are</h2>
+<p>Thaki is offered by Tural Mustafayev, an individual developer in Baku, Azerbaijan, who decides how your data is used (the "controller"). You can reach me about anything in this policy at <a href="mailto:mustafayev.t@outlook.com">mustafayev.t@outlook.com</a>.</p>
+<p>Effective 19 October 2026, version 2.</p>
+<h2 id="the-short-version">The short version</h2>
+<p>Your goals live on your phone unless you sign in. If you sign in, they sync to our server. If you ask Thaki to plan a goal, and only after you agree on a sheet that tells you so, its title and a few of your answers go to a third-party AI service to draft that plan, and nothing else does. We show no ads and track you across no apps.</p>
+<p>If you never sign in and never ask Thaki to plan, your goals, milestones, tiny steps and journal never leave your phone. What does leave it then: usage events, which you can switch off (You → Share usage stats), and the requests the app makes to RevenueCat to show Thaki Pro's prices and to handle a purchase.</p>
+<h2 id="what-we-collect">What we collect</h2>
+<p>This is everything, with why we use it, the legal basis under the GDPR and similar laws, how long we keep it, and who receives it.</p>
+<div class="tw"><table>
+<thead><tr><th>Data</th><th>Why</th><th>Legal basis</th><th>How long</th><th>Who receives it</th></tr></thead>
+<tbody>
+<tr><td><strong>Sign in with Apple</strong>: the identifier Apple gives us for you, and the email address Apple shares (which can be Apple's private relay address)</td><td>Your account and sync</td><td>Contract</td><td>Until you delete your account. The Apple token is revoked when you delete the account, so Thaki no longer has access through your Apple Account</td><td>Supabase, Apple</td></tr>
+<tr><td><strong>Account ID</strong>, a random id our server creates when you sign in</td><td>Your account, sync and purchases</td><td>Contract</td><td>Until you delete your account</td><td>Supabase, RevenueCat</td></tr>
+<tr><td><strong>Display name</strong>, if you give one</td><td>Greeting you, and sync</td><td>Contract</td><td>Until you delete your account</td><td>Supabase</td></tr>
+<tr><td><strong>Your answers to the first-run questions</strong>: multiple choice, never free text (how much time you have, your pace, what gets in the way, and where you heard about Thaki if you say)</td><td>Shaping a plan, and sync</td><td>Contract, and your consent when you plan</td><td>On your phone; on our server while you are signed in, until you delete your account</td><td>Supabase; when you plan, the third-party AI service receives your time, pace and what gets in the way (never where you heard about Thaki)</td></tr>
+<tr><td><strong>Goals, milestones and tiny steps</strong>: their titles, a goal's note, which tiny steps and milestones are done, and when goals and milestones were reached</td><td>The app itself, and sync</td><td>Contract</td><td>On your phone, and on our server while you are signed in, until you delete them or your account</td><td>Supabase; when you plan, the third-party AI service receives the goal's title</td></tr>
+<tr><td><strong>Your agreement to planning</strong>: that you agreed, this policy's version and the date</td><td>Showing that you agreed</td><td>Legal obligation</td><td>Until you delete your account</td><td>Supabase</td></tr>
+<tr><td><strong>Journal notes</strong>, and the journal's own record of what you walked</td><td>They stay on your phone and are never sent to us. (A tiny step you walked is marked done when it syncs, as above, but the journal and its notes are not.)</td><td>—</td><td>Until you delete them</td><td>No one</td></tr>
+<tr><td><strong>Install id</strong>: a random id the app makes on first launch and keeps on your phone. It is not an Apple advertising identifier</td><td>Telling one phone's usage events apart, and recognising your phone in support mail</td><td>Legitimate interest</td><td>As long as the app is installed on your phone; on our server, as long as the usage events that carry it (180 days). It is not removed when you delete your account, because it identifies a phone, not an account</td><td>Supabase; RevenueCat, as an attribute on the purchase record; us, if you use Contact us (the mail it opens is pre-filled with it, and you can delete it before sending)</td></tr>
+<tr><td><strong>Usage events</strong>: what you do in the app, never what your goals say, with the install id and, when signed in, your account id, plus the app version and your App Store country and language</td><td>Product analytics: learning which parts of Thaki help and which don't</td><td>Legitimate interest, and you can switch it off: You → Share usage stats</td><td>180 days. When you delete your account, your account id is removed from them</td><td>Supabase</td></tr>
+<tr><td><strong>IP address</strong>, when you plan</td><td>Abuse and rate limits</td><td>Legitimate interest</td><td>30 days, and removed at once when you delete your account</td><td>Supabase</td></tr>
+<tr><td><strong>Plan usage records</strong>: how many plans an account has used, when, which AI model answered and whether it succeeded</td><td>Pro's fair use</td><td>Legitimate interest</td><td>While you have an account. After you delete it they are kept without your account id or IP, as anonymous counts we use to watch costs and abuse; they are not tied to your phone either. We also keep a one-way fingerprint of your Apple ID and email address with the number of plans you used, so deleting your account and signing up again does not reset a plan allowance; the fingerprint can't be turned back into your Apple ID or email; we keep the fingerprint only for as long as an allowance could return</td><td>Supabase</td></tr>
+<tr><td><strong>Purchase status</strong>: whether you have Thaki Pro, which plan, when it renews or ends</td><td>Thaki Pro</td><td>Contract</td><td>Until you delete your account, when we delete it from RevenueCat too. If you buy without an account, RevenueCat keeps it under a random id until you sign in. Apple keeps its own purchase records</td><td>RevenueCat, Apple, Supabase</td></tr>
+<tr><td><strong>Device and app information</strong> RevenueCat's software collects: iOS version, app version, language, and a country worked out from your IP address</td><td>Showing prices in your currency and handling purchases</td><td>Contract and legitimate interest</td><td>Until you delete your account (see RevenueCat's privacy policy for its own logs)</td><td>RevenueCat</td></tr>
+<tr><td><strong>Server logs</strong>: our hosting provider's technical logs of requests to our server, which can include your account id and IP address</td><td>Security and fixing faults</td><td>Legitimate interest</td><td>Up to 7 days</td><td>Supabase</td></tr>
+<tr><td><strong>Messages you send us</strong>, with the facts Contact us pre-fills (the app build, iOS version, App Store country and install id)</td><td>Answering you</td><td>Legitimate interest, or a legal obligation when you exercise a right</td><td>Until the matter is closed, then only as long as we need to show we answered</td><td>Microsoft, which hosts our mailbox (Outlook)</td></tr>
+</tbody></table></div>
+<p>Giving us any of this is optional. Thaki works on your phone without an account; you need one only to sync and to plan with Thaki (planning also needs Thaki Pro). We don't make decisions about you by automated means that have legal or similarly significant effects.</p>
+<p>Your phone's own backups (iCloud or your computer) may include Thaki's data. Those are between you and Apple.</p>
+<h2 id="planning-with-thaki">Planning with Thaki</h2>
+<p>Planning is optional. It is a Thaki Pro feature and needs an account. Building your plan yourself sends nothing.</p>
+<p><strong>Who gets your data.</strong> When you agree and ask Thaki to plan a goal, our server sends the request to OpenRouter, a third-party AI service in the United States. OpenRouter passes it to a third-party AI model run by a model provider it picks, and that provider writes the plan. Neither OpenRouter nor the providers are part of Thaki.</p>
+<p><strong>What is sent:</strong> the goal as you typed it; your answers about how much time you have each day, how often you want a tiny step (your pace) and what usually gets in the way; and, if you have already finished a goal, how many days a week you walked it and about how many tiny steps each milestone held (as bands, not dates). Nothing else is added to the request. <strong>What is never sent:</strong> your name, your email, your other goals, your journal, your contacts or your location. The request carries no account id, email address or IP address of yours.</p>
+<p><strong>Keeping and training.</strong> Each request asks OpenRouter to route it only to model providers that keep no copy and don't train on it (OpenRouter's zero-data-retention and no-data-collection settings). We rely on OpenRouter and the providers to honour that; we can't inspect their systems, and we can't promise how they handle data once they have it. OpenRouter's own policy (openrouter.ai/privacy) says how it handles requests.</p>
+<p><strong>Crisis check.</strong> Before anything is sent, the app and our server check the goal's title for words that suggest a crisis. If they find them, nothing goes to the AI service and the app shows where to find help.</p>
+<p><strong>Your agreement.</strong> Before your first plan, Thaki shows a short sheet, titled "Let Thaki plan" and your goal's name, that says what is sent and that it goes to a third-party AI service. Nothing is sent until you tap "Agree and plan"; "Not now" sends nothing. Signing in is not agreement. You are asked once per account, and we keep your agreement on your account, with this policy's version and the date, so a second phone signed in to the same account doesn't ask again. If we change what planning sends, we change this policy's version and ask you again before your next plan.</p>
+<p>Plans from Thaki are suggestions generated automatically. They can be wrong or unsuitable, and you can change or delete anything in them.</p>
+<p><strong>Withdrawing.</strong> Stop tapping Let Thaki plan it: nothing is sent unless you tap it. To remove the record of your agreement and everything else on our server, delete your account, or write to us. Withdrawing doesn't affect plans you already have.</p>
+<h2 id="who-processes-your-data-and-where">Who processes your data, and where</h2>
+<div class="tw"><table>
+<thead><tr><th>Service</th><th>What it does for us</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>Supabase</td><td>Our server: accounts, sync, planning requests, usage events</td><td>Stored in Tokyo, Japan (Amazon Web Services); Supabase Inc. in the United States supports and operates it</td></tr>
+<tr><td>OpenRouter</td><td>Third-party AI service: passes a planning request to an AI model provider</td><td>United States</td></tr>
+<tr><td>The model providers behind OpenRouter</td><td>Third-party AI models that draft the plan; each request asks for providers that keep no data and don't train on it</td><td>United States and other countries</td></tr>
+<tr><td>RevenueCat</td><td>Manages Thaki Pro subscriptions</td><td>United States</td></tr>
+<tr><td>Apple</td><td>Sign in with Apple, App Store purchases</td><td>United States, Ireland</td></tr>
+<tr><td>Microsoft</td><td>Hosts our mailbox (Outlook), which receives the messages you send us</td><td>United States and other countries</td></tr>
+</tbody></table></div>
+<p><strong>Transfers.</strong> Japan has an adequacy decision from the European Commission, and the UK recognises it, so storing your data in Tokyo needs no further safeguard. For every service in the United States, the European Commission's Standard Contractual Clauses and the UK International Data Transfer Addendum in that service's data-processing agreement protect your data. You can ask us for a copy of the relevant safeguards.</p>
+<p><strong>If you are in Japan.</strong> Your data is stored in Japan and also handled in the United States by the services above. The United States has no comprehensive federal privacy law; some states, such as California, have their own. Each service that receives your data from us is bound by a contract that requires it to take measures equivalent to those the Act on the Protection of Personal Information requires of us.</p>
+<p><strong>If you are in South Korea.</strong> With your use of the features below, your data is transferred abroad as follows (Personal Information Protection Act, Article 28-8). It is sent over an encrypted connection each time the app talks to the service.</p>
+<div class="tw"><table>
+<thead><tr><th>Recipient and contact</th><th>Country</th><th>Items</th><th>Purpose</th><th>Kept for</th></tr></thead>
+<tbody>
+<tr><td>Supabase Inc. (supabase.com/privacy)</td><td>Japan (storage), United States</td><td>Everything in the table above that reaches our server</td><td>Accounts, sync, planning requests, usage events</td><td>As in the table above</td></tr>
+<tr><td>OpenRouter, Inc. (openrouter.ai/privacy) and its model providers</td><td>United States and other countries</td><td>The goal's title, your answers about time, pace and what gets in the way, and the pace of your last finished goal</td><td>Drafting a plan you asked for</td><td>Each request asks for zero retention; see "Planning with Thaki"</td></tr>
+<tr><td>RevenueCat, Inc. (revenuecat.com/privacy)</td><td>United States</td><td>Account ID, purchase status, device and app information</td><td>Thaki Pro</td><td>Until you delete your account</td></tr>
+</tbody></table></div>
+<p>To refuse: don't sign in (nothing syncs), don't use Let Thaki plan it (nothing goes to the AI service), switch off You → Share usage stats, and don't buy Thaki Pro. Refusing means you can't use that feature; the rest of Thaki still works on your phone.</p>
+<h2 id="equal-protection">Equal protection</h2>
+<p>Every service that receives your data from us is bound to protect it at least as well as this policy does.</p>
+<h2 id="how-long-we-keep-it">How long we keep it</h2>
+<p>As the table in "What we collect" says. In short: account data until you delete your account; usage events 180 days; IP addresses 30 days; server logs up to 7 days; plan usage records kept without anything that identifies you after you delete your account. Everything on your phone stays until you delete it or the app.</p>
+<h2 id="your-rights">Your rights</h2>
+<p>Depending on where you live, you can ask us to:</p>
 <ul>
-<li><strong>Account &amp; authentication.</strong> You can sign in with Sign in with Apple,</li>
+<li>tell you what we hold about you, and give you a copy (as a file you can take elsewhere);</li>
+<li>correct it;</li>
+<li>delete it;</li>
+<li>restrict how we use it;</li>
+<li>stop using it for something we do on the basis of legitimate interest (for usage events, switch off You → Share usage stats);</li>
+<li>withdraw a consent you gave, without affecting what we did before.</li>
 </ul>
-<p>or with an email address and a one-time code we send to it (no password to remember). We store your email address (if you use the email code) and Supabase&#x27;s authentication records for your account, including an internal User ID we use to link your data to you.</p>
-<ul>
-<li><strong>Synced path data.</strong> If you&#x27;re signed in, your paths, camps, tiny</li>
-</ul>
-<p>steps, and profile sync to our Supabase database so they&#x27;re available if you reinstall the app or use it on another device. This is the same data described in §1 — sync doesn&#x27;t add new categories of data, it just gives your existing data a second home.</p>
-<ul>
-<li><strong>Purchase history.</strong> If you buy Thaki Pro, we use <a href="https://www.revenuecat.com">RevenueCat</a> to</li>
-</ul>
-<p>record your purchase history and current subscription status, linked to your account, so the app knows to unlock Thaki Pro. We never see your card details — Apple handles billing.</p>
-<ul>
-<li><strong>Usage events.</strong> We record a small set of product-usage events (things</li>
-</ul>
-<p>like &quot;app opened,&quot; &quot;path started,&quot; &quot;camp cleared&quot;) to understand how people actually use Thaki and to fix what&#x27;s confusing. These events are keyed to your account if you&#x27;re signed in, or to a random, app-generated Device ID for that install if you&#x27;re not — an identifier that isn&#x27;t tied to your name, email, or the identity of your device in any way we can reverse, and isn&#x27;t linked to you. If you later sign in, your anonymous history and your account become linked going forward; we don&#x27;t retroactively deanonymize anything beyond that. Event data is retained for a limited window (on the order of months) and then deleted.</p>
-<h2>3. AI charting — what leaves your device and why</h2>
-<p>When you ask Thaki to chart a trail for you (&quot;Chart my trail,&quot; instead of building it yourself), we send <strong>your path&#x27;s title</strong> — for example, &quot;Run a 10K&quot; or &quot;Learn to bake sourdough&quot; — to an AI model through <a href="https://openrouter.ai">OpenRouter</a>, a service that routes requests to various AI providers. We don&#x27;t send your check-ins, journal entries, camp completion history, or any other personal data as part of this request — only the title you typed and a small amount of app-generated context needed to shape a sensible trail (like how many camps you asked for). Charting is optional — you can always build your own path by hand instead — and every camp it suggests is yours to rearrange, rename, or delete afterwards. Chartings are limited to a number per day, higher with Thaki Pro.</p>
-<p><strong>Beta caveat, disclosed plainly:</strong> during Thaki&#x27;s beta/TestFlight period, this feature may use a free-tier AI model. Free-tier models from some providers may log prompts for abuse monitoring or use them to improve their own models — this is a limitation of the underlying free service, not something Thaki does with your data on our own servers. We plan to move to a paid, no-logging model before a general App Store release; this policy will be updated when that happens, and this paragraph will be removed once it&#x27;s no longer true.</p>
-<p>Manual path-building — pitching your own camps without asking the AI — never sends anything to this AI provider. It&#x27;s always available and always free.</p>
-<h2>4. What we don&#x27;t do</h2>
-<ul>
-<li><strong>No tracking.</strong> None of the data described above is used to track you</li>
-</ul>
-<p>across other companies&#x27; apps or websites.</p>
-<ul>
-<li><strong>No ads.</strong> Thaki has no advertising SDKs, no ad networks, and no</li>
-</ul>
-<p>ad-targeting profile of you.</p>
-<ul>
-<li><strong>No sale of data.</strong> We do not sell, rent, or trade your personal data to</li>
-</ul>
-<p>any third party, for any purpose, ever.</p>
-<ul>
-<li><strong>No data broker relationships.</strong> The only third-party processors</li>
-</ul>
-<p>involved are the ones named in this policy — Apple (App Store, Sign in with Apple, App Attest), RevenueCat (subscriptions), Supabase (backend), and OpenRouter (AI charting) — each used strictly to provide the feature described above.</p>
-<h2>5. Your choices and controls</h2>
-<ul>
-<li><strong>Daily reminder</strong> (&quot;a morning nudge to take one tiny step&quot;) can be</li>
-</ul>
-<p>turned off entirely from Settings, in addition to iOS&#x27;s own notification controls. Turning this off cancels any scheduled reminders immediately.</p>
-<ul>
-<li><strong>Account deletion</strong> is available in-app, from Settings → Delete account.</li>
-</ul>
-<p>This deletes your account and its server-side copy of your data; usage events (§2) are disconnected from your identity at that point and expire within our retention window (on the order of 180 days).</p>
-<ul>
-<li><strong>Start fresh</strong> is a separate option, also in Settings, that wipes the</li>
-</ul>
-<p>local copy of your paths on that device — useful if you want to begin again without deleting your account.</p>
-<ul>
-<li><strong>Sign-out</strong> never deletes your local data — it only stops that device</li>
-</ul>
-<p>from syncing until you sign back in.</p>
-<h2>6. Children</h2>
-<p>Thaki does not knowingly collect personal information from children under the age applicable in your jurisdiction, and does not include a birthday or age-gate flow. If you believe a child has provided us personal information, contact us using the address below and we&#x27;ll remove it.</p>
-<h2>7. Changes to this policy</h2>
-<p>If we materially change what we collect or how we use it, we&#x27;ll update this page and adjust the &quot;Last updated&quot; date above. Continuing to use Thaki after a change means you accept the updated policy; if you don&#x27;t, you can stop using the app&#x27;s networked features (or the app entirely) and delete your account at any time.</p>
-<h2>8. Contact</h2>
-<p>Questions about this policy or your data? Reach us at <strong>badambura.corp@gmail.com</strong>.</p>
-<p>This policy is governed by the laws of <strong>Azerbaijan</strong>, without regard to its conflict-of-law provisions.</p>
+<p>Write to <a href="mailto:mustafayev.t@outlook.com">mustafayev.t@outlook.com</a>. If you use Sign in with Apple, say so and we will tell you how to confirm it's you. We answer within one month, or sooner where your local law sets a shorter deadline.</p>
+<p>You have the right to complain to the data-protection authority where you live: in the EU, your country's supervisory authority; in the UK, the Information Commissioner's Office (ICO); in Japan, the Personal Information Protection Commission (PPC); in South Korea, the Personal Information Protection Commission (PIPC). We'd be glad to try to help first.</p>
+<h2 id="deleting-your-account">Deleting your account</h2>
+<p>You → the profile card → Account → Delete account. Your account and everything on our server go; the goals on your phone stay. Thaki Pro is billed by Apple and keeps renewing until you cancel it in your Apple Account.</p>
+<p>When you delete your account we also ask Apple to revoke Thaki's access if you used Sign in with Apple, delete your record at RevenueCat, remove your IP address and account id from plan usage records, and remove your account id from usage events. To remove the goals on your phone too, delete the app.</p>
+<p>If you never signed in, nothing on our server is linked to you. Usage events from your phone are deleted after 180 days, and you can stop them with You → Share usage stats.</p>
+<h2 id="children">Children</h2>
+<p>Thaki is for people 13 and older (14 in South Korea).</p>
+<p>If a parent or guardian withdraws consent for a child's use of the app through Apple, Apple tells us and we keep that notice so we can act on it.</p>
+<p>If you believe a child under 13 uses Thaki, write to us and we will delete the account.</p>
+<h2 id="no-ads-no-tracking">No ads, no tracking</h2>
+<p>Thaki contains no advertising software and never reads your device's advertising identifier (IDFA). We don't sell your data or share it for advertising, and we don't track you across other companies' apps or websites.</p>
+<p>Because we don't track you, there is nothing for a Do Not Track or Global Privacy Control signal to switch off; we treat both as already honoured.</p>
+<h2 id="security">Security</h2>
+<p>Every connection between the app and our services is encrypted (TLS). On our server, row-level security means an account can reach only its own data. On your phone, your sign-in is kept in the iOS Keychain.</p>
+<h2 id="changes">Changes</h2>
+<p>If we make a material change to this policy, we will tell you in the app before it takes effect, and ask for your consent again where the law requires it. Each version has a number and an effective date; earlier versions stay available on request.</p>
+<h2 id="contact">Contact</h2>
+<p><a href="mailto:mustafayev.t@outlook.com">mustafayev.t@outlook.com</a></p>
 </div></body></html>
